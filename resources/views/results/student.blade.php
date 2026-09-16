@@ -1,0 +1,1 @@
+<h2>Results for {{$student->name}}</h2><table border='1'><tr><th>Course</th><th>Marks</th><th>Grade</th></tr>@foreach($student->results as $r)<tr><td>{{$r->course->name ?? ''}}</td><td>{{$r->marks}}</td><td>{{$r->grade}}</td></tr>@endforeach</table>

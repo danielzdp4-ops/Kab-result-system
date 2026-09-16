@@ -1,0 +1,1 @@
+<h2>Add Course</h2><form method='POST' action='/courses'>@csrf Code: <input name='code' required><br><br>Name: <input name='name' required><br><br>Lecturer: <select name='lecturer_id'>@foreach($lecturers as $l)<option value='{{$l->id}}'>{{$l->name}}</option>@endforeach</select><br><br>Credits: <input type='number' name='credits' value='3'><br><br><button>Save</button></form>
